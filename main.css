@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* container */
+
+.container{
+    padding: 50px;
+}
+
+/* logo */
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* top section */
+
+#topSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* user container */
+
+.userContainer{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.userContainer ion-icon{
+    font-size: 20px;
+}
+
+.userContainer #searchBar{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.userOptions{
+    margin-left: 5rem;
+}
+
+#searchLogo{
+    position: relative;
+    top: 3px;
+}
+
+#heartLogo, #cartLogo{
+    position: relative;
+    top: 3px;
+}
+
+/* navbar container */
+
+#navbar a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 10px;
+}
+
+/* slideshow container */
+
+.imageSliderContainer{
+    max-width: 65rem;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+    cursor: pointer;
+  
+}
+
+.mySlides{
+    display: none;
+}
+
+.image{
+    vertical-align: middle;
+}
+
+#topSection.sticky{
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+/* caption text */
+
+.text{
+    color: #000;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+
+  /* active dots */
+
+  .active {
+    background-color: #717171;
+  }
+
+
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 4}
+  }
+
+
+/* slide images */
+
+.image{
+    border-radius: 25px;
+    border: 10px solid #000;
+}
+
+.image1{
+    background: url('https://www.jacobrestaurant.com/images/slider5_.jpg');
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image2{
+    background: url('https://www.gannett-cdn.com/presto/2021/05/04/PLOU/ffe7458c-c134-4a91-a05a-1c995c1780ee-_AS_0921bayou.jpg?auto=webp&crop=3999,2250,x0,y140&format=pjpg&width=1200');
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image3{
+    background: url('https://assets0.dostuffmedia.com/uploads/aws_asset/aws_asset/8172363/6b99cd00-242a-44bf-85a0-a482ec388bcb.jpg');
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image4{
+    background: url('https://cdn.vox-cdn.com/thumbor/Wq93ixrEyJBIfyHcT66Sld97cjs=/0x0:2500x1667/1200x800/filters:focal(1050x634:1450x1034)/cdn.vox-cdn.com/uploads/chorus_image/image/70522383/soule.0.jpg');
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image5{
+    background: url('https://s.hdnux.com/photos/21/33/77/4571104/35/ratio3x2_1800.jpg');
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* services */
+
+#services{
+    padding-top: 5rem;
+}
+
+.service1 .serviceImage1{
+    background: url('https://img.icons8.com/windows/344/restaurant.png');
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.service2 .serviceImage2{
+    background: url('https://img.icons8.com/ios/344/bicycle.png');
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.service3 .serviceImage3{
+    background: url('https://img.icons8.com/ios-glyphs/344/coffee.png');
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.service4 .serviceImage4{
+    background: url('https://img.icons8.com/ios/344/calendar--v1.png');
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* service container */
+
+.servicesContainer{
+    display: flex;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service p{
+    margin: 10px;
+    width: 70%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.service button{
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/* welcome container */
+
+.welcomeContainer{
+    width: 100%;
+    height: 100vh;
+    padding-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* welcome image */
+
+.welcomeImage{
+    background: url('https://i.iheart.com/v3/re/assets.getty/5f907c7351f37d81a07d6805');
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 50vh;
+}
+
+
+
+/* welcome text */
+
+.welcomeText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.welcomeText button{
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
