@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>www.martinscatering.com</title>
 </head>
 <body>
+    <div id="mobileMenuContainer">
+        <div class="mobileMenuLogoContainer">
+            <h4>Martin's™</h4>
+            <i class="fa-solid fa-burger"></i>
+         </div>
+        <div class="mobileMenuBtn">
+            <i class="fa-solid fa-bars"></i>
+         </div>
+    </div>
     <div class="container">
         <div id="topSection">
-            <div class="logoContainer">
-               <h4>Martin's</h4>
-               <ion-icon name="fast-food-outline"></ion-icon>
+            <div class="logoWrapper">
+                <div class="logoContainer">
+                    <h4>Martin's</h4>
+                    <ion-icon name="fast-food-outline"></ion-icon>
+                 </div>
             </div>
+
             <div id="navbar">
                 <ul id="menu">
-                    <a href="#services">Services</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Delivery</a>
+                    <a href="#">Services</a>
                     <a href="#about">About Us</a>
+                    <a href="#menuTitleContainer">Menu</a>
+                    <a href="#galleryTitleContainer">Gallery</a>
                     <a href="#">Contact</a>
                 </ul>
             </div>
@@ -105,11 +117,158 @@
                 <button>Explore Menu</button>
             </div>
         </div>
+
+        <div id="menuContainer">
+            <div id="menuTitleContainer">
+                <h1>Main Menu</h1>
+            </div>
+            <p class="menuDescript"> Picky eaters, adventurous eaters, whatever your taste - we have something for you. </p>
+            <div class="menuBtnContainer">
+                <button id="startersBtn">Starters</button>
+                <button id="allDayBtn">All Day</button>
+                <button id="brunchBtn">Brunch</button>
+            </div>
+            <div class="foodContainer">
+                <div class="foodTitle">
+                    <h3>All Day Classics</h3>
+                </div>
+                <div class="foodWrapper">
+                    <div class="food1 food">
+                        <div class="foodImage1"></div>
+                        <div class="foodDescript">
+                            <h5>
+                                Lorem ipsum dolor sit, amet consectetur
+                            </h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="foodPrice1">
+                            <h6>$12</h6>
+                        </div>
+                    </div>
+                    <div class="food2 food">
+                        <div class="foodImage2"></div>
+                        <div class="foodDescript">
+                            <h5>
+                                Lorem ipsum dolor sit, amet consectetur
+                            </h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="foodPrice2">
+                            <h6>$12</h6>
+                        </div>
+                    </div>
+                    <div class="food3 food">
+                        <div class="foodImage3"></div>
+                        <div class="foodDescript">
+                            <h5>
+                                Lorem ipsum dolor sit, amet consectetur
+                            </h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="foodPrice3">
+                            <h6>$14</h6>
+                        </div>
+                    </div>
+                    <div class="food4 food">
+                        <div class="foodImage4"></div>
+                        <div class="foodDescript">
+                            <h5>
+                                Lorem ipsum dolor sit, amet consectetur
+                            </h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="foodPrice4">
+                            <h6>$10</h6>
+                        </div>
+                    </div>
+                    <div class="food5 food">
+                        <div class="foodImage5"></div>
+                        <div class="foodDescript">
+                            <h5>
+                                Lorem ipsum dolor sit, amet consectetur
+                            </h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="foodPrice5">
+                            <h6>$12</h6>
+                        </div>
+                    </div>
+                    <div class="food6 food">
+                        <div class="foodImage6"></div>
+                        <div class="foodDescript">
+                            <h5>
+                                Lorem ipsum dolor sit, amet consectetur
+                            </h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+                        </div>
+                        <div class="foodPrice6">
+                            <h6>$9</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="galleryContainer">
+            <div id="galleryTitleContainer">
+                <h1>
+                    Gallery
+                </h1>
+                <p>
+                    photos of our food and our events 
+                </p>
+            </div>
+            <div class="galleryImages">
+                <div class="gallery galleryImage1"></div>
+                <div class="gallery galleryImage2"></div>
+                <div class="gallery galleryImage3"></div>
+                <div class="gallery galleryImage4"></div>
+            </div>
+            <div class="galleryBtnContainer">
+                <button id="galleryBtn">all images</button>
+            </div>
+        </div>
+        <div id="contactContainer">
+            <div class="contactSection">
+                <div class="contact contactBox1">
+                    <div class="contactText1">
+                        <p>
+                            You can find us at
+                            123 MAIN STREET, HARLEM
+                            NY 11101
+                        </p>
+                        <button><ion-icon name="location-outline"></ion-icon>View on google maps</button>
+                        <p>or call us at <ion-icon name="call-outline"></ion-icon>123-456-7890</p>
+                        <p>You can make a reservation online by clicking <a href="#">here</a></p>
+                        <p>See you!<ion-icon name="heart-outline"></ion-icon></p>
+                    </div>
+                </div>
+                <div class="contact contactBox2">
+                    <div class="imageContainer"></div>
+                </div>
+                <div class="contact contactBox3">
+                    <input type="text" id="firstName" placeholder="NAME*">
+                    <input type="text" id="email" placeholder="EMAIL*">
+                    <textarea name="userMessage" id="userMessage" placeholder="WRITE*"></textarea>
+                    <div class="sendBtnContainer">
+                        <button id="sendBtn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footerLogo">
+                <h4>Martin's<ion-icon name="fast-food-outline"></ion-icon>®</h4>
+            </div>
+           <div class="socialMediaContainer">
+                <ion-icon name="logo-snapchat"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+               <ion-icon name="logo-facebook"></ion-icon>
+           </div>
+        </footer>
     </div>
-    <script src="../js/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+    <script src="../js/index.js"></script>
 </body>
 </html>
